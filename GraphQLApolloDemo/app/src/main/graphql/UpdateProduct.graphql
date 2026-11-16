@@ -1,0 +1,11 @@
+mutation UpdateProduct(
+        $id: ID!,
+        $name: String!,
+        $price: Float!
+){
+    updateProduct(id: $id, name: $name, price: $price){
+        id
+        name
+        price
+    }
+}
